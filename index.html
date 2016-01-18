@@ -1,0 +1,11 @@
+---
+layout: default
+---
+<main class="posts">
+	{% for post in site.posts %}
+	<article class="post">
+		<h2 class="post-title"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
+		<time class="post-date">{{ post.date | date: '%B %-d, %Y' }}</time>
+	</article>
+	{% endfor %}
+</main>

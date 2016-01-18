@@ -1,0 +1,23 @@
+# Site Info
+title:              "十年"
+description:        "人間太苦，成仙太難"
+
+# Author Info
+author_name:        "bushuai"
+author_email:       ibushuai@gmail.com
+twitter_username:   bushuai
+github_username:    bushuai
+
+# Site Settings
+baseurl:            "" # Base URL must end WITHOUT a slash, default: ""
+permalink:          /posts/:title # Post permalink
+timezone:           Asia/Chongqing # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+
+# Site Build
+highlighter:        pygments
+#markdown:           redcarpet
+#redcarpet:
+#    extensions:     ["no_intra_emphasis", "fenced_code_blocks", "autolink", "tables", "with_toc_data", "highlight", "footnotes"]
+markdown:           kramdown
+kramdown:
+    input:          GFM
