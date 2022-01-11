@@ -1,36 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 html,
 body {
   height: 100%;
   width: 100%;
-  margin: 0;
-  padding: 0;
-  font-size: 12px;
-  font-family: -apple-system,PingFang SC,Hiragino Sans GB,Microsoft YaHei,Helvetica Neue,Arial,sans-serif;
-  word-break: break-word;
-  text-rendering: optimizeLegibility;
 }
 
 body {
-/*   min-height: 100vh;
-  background: var(--bg);
-  color: var(--fg);
-  font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto, Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue, sans-serif;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
+  font-family: -apple-system,PingFang SC,Hiragino Sans GB,Microsoft YaHei,Helvetica Neue,Arial,sans-serif;
   display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  background-image: radial-gradient(#ddd 1px,transparent 1px), radial-gradient(#ddd 1px,transparent 1px);
-  background-position: 0 0,25px 25px;
+  background-image: radial-gradient(#ececec 1px, transparent 1px), radial-gradient(#ececec 1px, transparent 1px);
+  background-position: 0 0, 25px 25px;
   background-attachment: fixed;
   background-size: 50px 50px;
-  overflow-x: hidden; */
+  overflow-x: hidden;
 }
 
 .main {
@@ -38,21 +26,31 @@ body {
   width: 100%;
   height: 100%;
   display: flex;
+  font-size: 12px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
 .intrests {
-  padding: 2px 5px;
+  padding: 4px 8px;
   margin-top: 15px;
   cursor: crosshair;
   background: #000;
   border-radius: 3px;
 }
 
+.photo__item {
+  width: 130px;
+  height: 130px;
+  overflow: hidden;
+  border-radius: 50%;
+  margin-bottom: 60px;
+  border: 4px solid #eee;
+}
+
 .links__item {
-  margin: 0 5px;
+  margin: 0 6px;
   color: #777;
   font-weight: bold;
   text-decoration: none;
@@ -61,7 +59,7 @@ body {
 .links__item:hover .iconfont {
   animation-name: bp;
   animation-iteration-count: infinite;
-  animation-duration: .3s;
+  animation-duration: 0.3s;
   animation-timing-function: ease-in-out;
 }
 
@@ -99,7 +97,7 @@ footer {
 
 .footer__link,
 .links__item {
-  transition: color .3s ease;
+  transition: color 0.3s ease;
 }
 
 .footer__link:hover,
@@ -111,11 +109,11 @@ footer {
   from {
     transform: scale(1);
   }
-  
+
   50% {
     transform: scale(1.15);
   }
-  
+
   to {
     transform: scale(1);
   }
@@ -125,7 +123,7 @@ footer {
   from {
     transform: translateY(0);
   }
-  
+
   50% {
     transform: translateY(-2px);
   }
