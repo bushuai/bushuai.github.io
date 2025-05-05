@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 html,
@@ -10,20 +11,12 @@ body {
 }
 
 body {
-  font-family: -apple-system,PingFang SC,Hiragino Sans GB,Microsoft YaHei,Helvetica Neue,Arial,sans-serif;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-image: radial-gradient(#ececec 1px, transparent 1px), radial-gradient(#ececec 1px, transparent 1px);
-  background-position: 0 0, 25px 25px;
-  background-attachment: fixed;
-  background-size: 50px 50px;
-  overflow-x: hidden;
+  font-family: -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif, serif;
 }
 
 .main {
-  color: #fff;
-  width: 100%;
+  width: 350px;
+  margin: 0 auto;
   height: 100%;
   display: flex;
   font-size: 12px;
@@ -32,38 +25,48 @@ body {
   align-items: center;
 }
 
-.intrests {
-  padding: 4px 8px;
+.interests {
+  width: 100%;
+  border: 1px solid #eee;
+  padding: 6px 8px;
   margin-top: 15px;
   cursor: crosshair;
-  background: #000;
-  border-radius: 3px;
+  box-shadow: inset 0 0 16px #eee;
+  background: #fff;
+  border-radius: 4px;
+  color: #777;
+  text-align: center;
 }
 
-.photo__item {
-  width: 130px;
-  height: 130px;
-  overflow: hidden;
-  border-radius: 50%;
-  margin-bottom: 60px;
-  border: 4px solid #eee;
+.links {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.links__item {
-  margin: 0 6px;
+.handle {
+  cursor: grab;
+  color: #000;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.links-item {
+  margin: 0 4px;
   color: #777;
   font-weight: bold;
   text-decoration: none;
 }
 
-.links__item:hover .iconfont {
+.links-item:hover .iconfont {
   animation-name: bp;
   animation-iteration-count: infinite;
   animation-duration: 0.3s;
   animation-timing-function: ease-in-out;
 }
 
-.links__icon {
+.links-icon {
   display: inline-block;
 }
 
@@ -78,7 +81,7 @@ footer {
   color: #ccc;
 }
 
-.footer__icon {
+.footer-icon {
   display: inline-block;
   color: #f00;
   font-size: 12px;
@@ -89,19 +92,21 @@ footer {
   animation-timing-function: ease-in-out;
 }
 
-.footer__link {
+.footer-link {
   color: #ccc;
-  text-decoration: underline;
   margin-left: 2px;
+  text-decoration: none;
 }
 
-.footer__link,
-.links__item {
+.footer-link,
+.handle,
+.links-item {
   transition: color 0.3s ease;
 }
 
-.footer__link:hover,
-.links__item:hover {
+.footer-link:hover,
+.handle:hover,
+.links-item:hover {
   color: #000;
 }
 
